@@ -68,14 +68,17 @@ def CHOICE4() :
 
 def initial() :
     global a
+    print("Creating First Account")
     Web=input("Website: ").strip()
     User=input("Username: ").strip()
     Pass=input("Password: ") 
-    d=f"{User}@{Web}\n"
+    d=f"{User}@{Web}@{Pass}\n"
     with open("File,txt","a") as f:
         f.write(f"{a}.{d}")
     a+=1
+    print("Credential Save Successfully:\n")
     return  
 
 initial()
 Valut_Lite()
+    
